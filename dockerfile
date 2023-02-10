@@ -1,6 +1,6 @@
 FROM python:3.9
 
-EXPOSE 8080
+EXPOSE 8501
 # Make working directories
 RUN  mkdir -p  /stramlit-ipad
 WORKDIR  /stramlit-ipad
@@ -23,4 +23,4 @@ COPY  . .
 
 # Run the python application
 CMD ["python", "main.py"]
-ENTRYPOINT ["streamlit", "run", "./main.py", "--server.port=8080", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "./main.py", "--server.port=8501", "--server.address=0.0.0.0"]
