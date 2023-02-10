@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM --platform=linux/arm4 python:3.9
 
 EXPOSE 8501
 # Make working directories
