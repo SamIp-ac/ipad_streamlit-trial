@@ -1,8 +1,61 @@
-FROM python:3.9
+## steramlit eample
+FROM python:3.9-slim
+EXPOSE 8501
+
+RUN  mkdir -p  /streamlit-ipad
+WORKDIR /streamlit-ipad
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    software-properties-common \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+RUN pip3 install -r requirements.txt
+
+HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+
+ENTRYPOINT ["streamlit", "run", "main.py"]
+CMD ["main.py"]
+
+####################################
+# For deploying in gcloud
+FROM --platform=linux/amd64 python:3.9
+ENV export DOCKER_DEFAULT_PLATFORM=linux/amd64
+# Maintainer info
+LABEL maintainer="i60996395@gmail.com"
 
 EXPOSE 8501
 # Make working directories
-WORKDIR  /stramlit-ipad
+RUN  mkdir -p  /streamlit_ipad
+WORKDIR  /streamlit_ipad
+
+# Upgrade pip with no cache
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    software-properties-common \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy application requirements file to the created working directory
+COPY requirements.txt .
+
+# Install application dependencies from the requirements file
+RUN pip install --no-cache-dir --upgrade -r requirements.txt
+
+# Copy every file in the source folder to the created working directory
+COPY  . .
+
+# Run the python application
+CMD ["python", "main.py"]
+ENTRYPOINT ["streamlit", "run", "./main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
+# original dockerfile
+FROM python:3.8
+EXPOSE 8502
+
+WORKDIR /streamlit-ipad
 
 # Upgrade pip with no cache
 RUN apt-get update && apt-get install -y \
@@ -12,15 +65,8 @@ RUN apt-get update && apt-get install -y \
     git \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy application requirements file to the created working directory
-COPY requirements.txt .
+COPY . /streamlit-ipad
 
-# Install application dependencies from the requirements file
-RUN pip3 install --no-cache-dir --upgrade -r requirements.txt
+RUN pip3 install -r requirements.txt
 
-# Copy every file in the source folder to the created working directory
-COPY  . .
-
-# Run the python application
-CMD ["python", "main.py"]
-ENTRYPOINT ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+CMD streamlit run main.py --server.port=8502 --server.address=127.0.0.1
