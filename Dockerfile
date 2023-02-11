@@ -4,6 +4,11 @@ RUN  mkdir -p  /streamlit_ipad
 COPY . ./streamlit-ipad
 WORKDIR /streamlit-ipad
 
+#### Use this work ####
+RUN  mkdir -p  /streamlit_ipad
+WORKDIR /streamlit-ipad
+COPY . .
+######################
 # Upgrade pip with no cache
 RUN apt-get update && apt-get install -y git
 
