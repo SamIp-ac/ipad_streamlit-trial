@@ -1,19 +1,17 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Hello",
+    page_title="Checking list",
     page_icon="👋",
 )
-st.write('success')
 
 st.header('Dev Tool')
-st.subheader('Communication:')
 
-tool1 = st.empty()
+st.subheader('Communication:')
 tool1.checkbox('OpenProject')
 if tool1:
     st.checkbox('OpenProject', value=True)
-    tool1 = st.empty()
+
 tool1 = st.checkbox('Mattermost')
 
 st.subheader('Deployment:')
