@@ -8,90 +8,90 @@ st.write('success')
 
 st.header('Dev Tool')
 st.subheader('Communication:')
-tool1 = st.checkbox('
-OpenProject
-MatterMost')
-tools2 = st.checkbox('
-Deployment:
-Docker 
-Git — .gitignore
-GitHub
+tool1 = st.checkbox('OpenProject')
+tool1 = st.checkbox('Mattermost')
 
-App dev:
-Android studio — Flutter
+st.subheader('Deployment:')
+tool = st.checkbox('Docker')
+tool = st.checkbox('Git — .gitignore')
+tool = st.checkbox('GitHub')
 
-Web dev:
-VSCode — Flutter
-Django (Python)
-Flask
+st.subheader('App dev:')
+tool = st.checkbox('Android studio — Flutter')
 
-Package:
-Anaconda
+st.subheader('Web dev:')
+tool = st.checkbox('VSCode — Flutter')
+tool = st.checkbox('Django (Python)')
+tool = st.checkbox('Flask')
 
-Backend/Data science:
-Pycharm
-tfile Flutter
+st.subheader('Package:')
+tool = st.checkbox('Anaconda')
 
-Data analysis:
-RStudio
-Tableau
-Google analytics 
-D3.is (D3 chart python)
+st.subheader('Backend/Data science:')
+tool = st.checkbox('Pycharm')
+tool = st.checkbox('tfile -- Flutter')
 
-API:
-Fastapi/Flask
+st.subheader('Data analysis:')
+tool = st.checkbox('RStudio')
+tool = st.checkbox('Tableau')
+tool = st.checkbox('Google analytics')
+tool = st.checkbox('D3.is (D3 chart python)')
 
-API testing:
-Postman
+st.subheader('API:')
+tool = st.checkbox('Fastapi/Flask')
 
-API deploy:
-Heroku 
-VM (PVE — Proxmox — ubuntu)
-Google Cloud Run
-AWS gateways
+st.subheader('API testing:')
+tool = st.checkbox('Postman')
 
-Database:
-Firebase
-MySQL
-Redis
-Multi-Cloud Storage:
-MinIO
+st.subheader('API deploy:')
+tool = st.checkbox('Heroku')
+tool = st.checkbox('VM (PVE — Proxmox — ubuntu)')
+tool = st.checkbox('Google Cloud Run')
+tool = st.checkbox('AWS gateways')
 
-Animations:
-Unity
-Unreal Engine
+st.subheader('Database:')
+tool = st.checkbox('Firebase')
+tool = st.checkbox('MySQL')
+tool = st.checkbox('Redis')
 
-Terminal:
-iTerm 2
-Zsh
-Flutter doctor
+st.subheader('Multi-Cloud Storage:')
+tool = st.checkbox('MinIO')
 
-Version control:
-Flagsmith
+st.subheader('Animation:')
+tool = st.checkbox('Unity -- VS')
+tool = st.checkbox('Unreal Engine -- VS')
+tool = st.checkbox('Rive (To flutter)')
 
-Data science web app:
-Streamlit — .streamlit
+st.subheader('Terminal:')
+tool = st.checkbox('iTerm 2')
+tool = st.checkbox('Zsh')
+tool = st.checkbox('Flutter doctor')
 
-Mail API:
-MailGun
+st.subheader('Version control, A/B Testing:')
+tool = st.checkbox('Flagsmith')
 
-Web Scrapping:
-Beautiful Soap
-Scrappy
-URLLIB
-Selenium (harder)
+st.subheader('Data science web app:')
+tool = st.checkbox('Streamlit — .streamlit')
 
-UI/UX:
-Adobe XD (To flutter)
-Figma (To flutter)
+st.subheader('Mail API:')
+tool = st.checkbox('MailGun')
 
-App Marketing:
-Apple connect
-Google play console
+st.subheader('Web Scrapping:')
+tool = st.checkbox('Beautiful Soap')
+tool = st.checkbox('Scrappy')
+tool = st.checkbox('URLLIB')
+tool = st.checkbox('Selenium (harder)')
 
-Web Services, System Development:
-Rust (Ruff)
+st.subheader('UI/UX:')
+tool = st.checkbox('Adobe XD (To flutter)')
+tool = st.checkbox('Figma (To flutter)')
 
-Big Data sources:
-https://www.finereport.com/tw/data-analysis/freedata.html
-')
+st.subheader('App Marketing:')
+tool = st.checkbox('Apple connect')
+tool = st.checkbox('Google play console')
+
+st.subheader('Web Services, System Development:')
+tool = st.checkbox('Rust (Ruff)')
+
+st.subheader('Big Data Sources:')
+tool = st.checkbox('[https://www.finereport.com/tw/data-analysis/freedata.html]')
