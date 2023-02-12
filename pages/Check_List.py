@@ -55,6 +55,7 @@ tool = st.checkbox('AWS gateways')
 st.subheader('Database:')
 tool = st.checkbox('Firebase')
 tool = st.checkbox('MySQL')
+tool = st.checkbox('PostgreSQL')
 tool = st.checkbox('Redis')
 
 st.subheader('Multi-Cloud Storage:')
