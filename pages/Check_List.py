@@ -8,7 +8,7 @@ st.set_page_config(
 st.header('Dev Tool')
 
 st.subheader('Communication:')
-tool1.checkbox('OpenProject')
+tool1 = st.checkbox('OpenProject')
 if tool1:
     st.checkbox('OpenProject', value=True)
 
