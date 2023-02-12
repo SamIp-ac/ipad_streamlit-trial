@@ -9,6 +9,9 @@ st.write('success')
 st.header('Dev Tool')
 st.subheader('Communication:')
 tool1 = st.checkbox('OpenProject')
+if tool1:
+    st.checkbox('OpenProject', value=True)
+    tool1 = st.empty()
 tool1 = st.checkbox('Mattermost')
 
 st.subheader('Deployment:')
