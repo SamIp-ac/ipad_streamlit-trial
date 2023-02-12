@@ -8,22 +8,14 @@ st.set_page_config(
 st.header('Dev Tool')
 
 st.subheader('Communication:')
-tool1 = st.empty()
-tool1.checkbox('OpenProject')
-if tool1:
-    tool1.empty()
-    st.checkbox('OpenProject', value=True)
-    
-if tool1==False:
-    tool1.empty()
-    st.checkbox('OpenProject', value=False)
 
-tool1 = st.checkbox('Mattermost')
+tool1 = st.checkbox('OpenProject', value=True)
+tool1 = st.checkbox('Mattermost', value=True)
 
 st.subheader('Deployment:')
-tool = st.checkbox('Docker')
-tool = st.checkbox('Git — .gitignore')
-tool = st.checkbox('GitHub')
+tool = st.checkbox('Docker', value=True)
+tool = st.checkbox('Git — .gitignore', value=True)
+tool = st.checkbox('GitHub', value=True)
 
 st.subheader('App dev:')
 tool = st.checkbox('Android studio — Flutter')
@@ -34,34 +26,34 @@ tool = st.checkbox('Django (Python)')
 tool = st.checkbox('Flask')
 
 st.subheader('Package:')
-tool = st.checkbox('Anaconda')
+tool = st.checkbox('Anaconda', value=True)
 
 st.subheader('Backend/Data science:')
-tool = st.checkbox('Pycharm')
+tool = st.checkbox('Pycharm', value=True)
 tool = st.checkbox('tfile -- Flutter')
 
 st.subheader('Data analysis:')
-tool = st.checkbox('RStudio')
-tool = st.checkbox('Tableau')
+tool = st.checkbox('RStudio', value=True)
+tool = st.checkbox('Tableau', value=True)
 tool = st.checkbox('Google analytics')
 tool = st.checkbox('D3.is (D3 chart python)')
 
 st.subheader('API:')
-tool = st.checkbox('Fastapi/Flask')
+tool = st.checkbox('Fastapi/Flask', value=True)
 
 st.subheader('API testing:')
-tool = st.checkbox('Postman')
+tool = st.checkbox('Postman', value=True)
 
 st.subheader('API deploy:')
-tool = st.checkbox('Heroku')
+tool = st.checkbox('Heroku (need sign up by VPN -- US address)')
 tool = st.checkbox('VM (PVE — Proxmox — ubuntu)')
-tool = st.checkbox('Google Cloud Run')
+tool = st.checkbox('Google Cloud Run', value=True)
 tool = st.checkbox('AWS gateways')
 
 st.subheader('Database:')
-tool = st.checkbox('Firebase')
-tool = st.checkbox('MySQL')
-tool = st.checkbox('PostgreSQL')
+tool = st.checkbox('Firebase', value=True)
+tool = st.checkbox('MySQL', value=True)
+tool = st.checkbox('PostgreSQL', value=True)
 tool = st.checkbox('Redis')
 
 st.subheader('Multi-Cloud Storage:')
@@ -73,15 +65,15 @@ tool = st.checkbox('Unreal Engine -- VS')
 tool = st.checkbox('Rive (To flutter)')
 
 st.subheader('Terminal:')
-tool = st.checkbox('iTerm 2')
-tool = st.checkbox('Zsh')
-tool = st.checkbox('Flutter doctor')
+tool = st.checkbox('iTerm 2', value=True)
+tool = st.checkbox('Zsh', value=True)
+tool = st.checkbox('Flutter doctor', value=True)
 
 st.subheader('Version control, A/B Testing:')
 tool = st.checkbox('Flagsmith')
 
 st.subheader('Data science web app:')
-tool = st.checkbox('Streamlit — .streamlit')
+tool = st.checkbox('Streamlit — .streamlit', value=True)
 
 st.subheader('Mail API:')
 tool = st.checkbox('MailGun')
