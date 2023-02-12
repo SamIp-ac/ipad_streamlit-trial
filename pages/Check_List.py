@@ -98,3 +98,7 @@ tool = st.checkbox('Rust (Ruff)')
 
 st.subheader('Big Data Sources:')
 tool = st.checkbox('[https://www.finereport.com/tw/data-analysis/freedata.html]')
+
+with open( "style.css" ) as css:
+    st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
+
