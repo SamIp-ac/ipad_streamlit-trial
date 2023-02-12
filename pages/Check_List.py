@@ -10,6 +10,7 @@ st.header('Dev Tool')
 st.subheader('Communication:')
 tool1 = st.checkbox('OpenProject')
 if tool1:
+    tool1.empty()
     st.checkbox('OpenProject', value=True)
 
 tool1 = st.checkbox('Mattermost')
