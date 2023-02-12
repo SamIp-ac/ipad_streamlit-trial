@@ -13,6 +13,10 @@ tool1.checkbox('OpenProject')
 if tool1:
     tool1.empty()
     st.checkbox('OpenProject', value=True)
+    
+if tool1==False:
+    tool1.empty()
+    st.checkbox('OpenProject', value=False)
 
 tool1 = st.checkbox('Mattermost')
 
