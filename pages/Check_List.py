@@ -33,6 +33,8 @@ tool = st.checkbox('Pycharm', value=True)
 tool = st.checkbox('tfile -- Flutter')
 
 st.subheader('Data analysis:')
+tool = st.checkbox('SAS')
+tool = st.checkbox('SPSS')
 tool = st.checkbox('RStudio', value=True)
 tool = st.checkbox('Tableau', value=True)
 tool = st.checkbox('Google analytics')
