@@ -188,6 +188,6 @@ The last part is doing the deployment. Definitely, whether you are fresher or 5+
 
 st.write('[link](https://coggle.it/diagram/XIpNSBc5AmfW0P_J/t/data-science-map)')
 st.write('[link](https://whimsical.com/machine-learning-roadmap-2020-CA7f3ykvXpnJ9Az32vYXva)')
-st.write('[link]'(https://www.theinsaneapp.com/2021/03/roadmap-series.html))
+st.write('[link](https://www.theinsaneapp.com/2021/03/roadmap-series.html)')
 st.image('Data_Science_Map.png')
 st.image('BF95EE10-E000-4802-929C-4B1D44C4ED61.png')
