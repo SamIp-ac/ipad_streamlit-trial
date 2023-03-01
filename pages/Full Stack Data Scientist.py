@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.text('Full Stack Data Scientist
+st.write('''Full Stack Data Scientist
 
 Road Map
 
@@ -260,4 +260,4 @@ Microsoft Azure
 
 12 | Five Major Projects and Git
 
-Git - Version Control System')
+Git - Version Control System''')
