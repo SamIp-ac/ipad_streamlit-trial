@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.text('Data Science
+st.text('''Data Science
 
 Road Map
 
@@ -184,7 +184,7 @@ The last part is doing the deployment. Definitely, whether you are fresher or 5+
     * Project on Movie Recommendation, etc.
 
 12) Keep Practicing
-“Practice makes a man perfect” which tells the importance of continuous practice in any subject to learn anything. ')
+“Practice makes a man perfect” which tells the importance of continuous practice in any subject to learn anything. ''')
 
 st.write('[link](https://coggle.it/diagram/XIpNSBc5AmfW0P_J/t/data-science-map)')
 st.write('[link](https://whimsical.com/machine-learning-roadmap-2020-CA7f3ykvXpnJ9Az32vYXva)')
