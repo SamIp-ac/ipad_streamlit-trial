@@ -1,0 +1,142 @@
+Dev Tool
+
+Communication:
+OpenProject
+MatterMost
+
+Deployment:
+Docker (can automatically)
+
+Git:
+GitHub
+GitLab
+Git — .gitignore
+
+Docker:
+Portainer (multi-cloud container management)
+
+Docker auto push:
+GitHub to docker (by DockerHub)
+GitHub to docker (by GitHub actions)
+
+Docker auto pull:
+Docker Watchtower
+
+Cloud platform:
+Google Cloud
+AWS EC2
+
+App dev:
+Android studio — Flutter
+
+Web dev:
+VSCode — Flutter
+Django (Python)
+Flask
+Angular
+React
+Vue
+
+UI/UX:
+Adobe XD (To flutter)
+Figma (To flutter)
+React Native (JavaScript)
+
+env:
+pip
+Anaconda
+pipenv
+Poetry
+
+Backend/Data science:
+Pycharm
+tfile Flutter
+
+Data analysis:
+RStudio
+Tableau
+Google analytics 
+D3.is (D3 chart python)
+
+API:
+Fastapi/Flask
+
+API testing:
+Postman
+
+API deploy:
+Heroku 
+VM (Server — PVE — Proxmox — ubuntu)
+Google Cloud Run
+AWS gateways
+Linode
+
+Pipeline (auto):
+GitHub Actions
+AWC CLI
+Google gsutil
+Google Cloud CLI Docker
+
+Database:
+Firebase
+MySQL
+PostgreSQL
+Redis
+
+Multi-Cloud Storage:
+MinIO
+
+Animations:
+Unity
+Unreal Engine
+
+Terminal:
+iTerm 2
+Zsh
+Flutter doctor
+npm
+yarn
+pip
+
+Version control:
+Flagsmith
+
+Data science web app:
+Streamlit — .streamlit
+
+Mail API:
+MailGun
+
+Web Scrapping:
+Beautiful Soap
+Scrappy
+URLLIB
+Selenium (harder)
+
+
+App Marketing:
+Apple connect
+Google play console
+
+Web Services, System Development:
+Rust (Ruff)
+
+Web Domain:
+cloudflare
+google dns
+
+Big Data sources:
+https://www.finereport.com/tw/data-analysis/freedata.html
+
+Server:
+Proxmox 
+Dufs 
+
+VPN:
+Surfshark
+
+Helper:
+ChatGPT
+
+Unknown:
+yarn office:deploy
